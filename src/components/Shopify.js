@@ -11,7 +11,6 @@ const Shopify = () => {
   const modal = useRef(null);
 
   const openModal = () => {
-    console.log('open modal');
     modal.current.open();
   };
 

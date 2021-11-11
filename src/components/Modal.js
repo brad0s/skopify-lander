@@ -38,7 +38,6 @@ const Input = ({
             setActive(true);
             if (setShopUrlAnimate) {
               if (e.target.value.length > 4) {
-                console.log('here');
                 setShopUrlAnimate(true);
               } else {
                 setShopUrlAnimate(false);

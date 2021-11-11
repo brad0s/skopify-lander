@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <footer className="Footer">
-      <a href="#">Terms of Service</a>
-      <a href="#">Privacy Policy</a>
+      <a href="javascript: void(0);">Terms of Service</a>
+      <a href="javascript: void(0);">Privacy Policy</a>
     </footer>
   );
 };
