@@ -1,0 +1,50 @@
+.Points {
+  padding: 4rem 0;
+  @include breakpoint('tablet') {
+    padding: 6rem 0;
+  }
+
+  &--wrapper {
+    padding: 0 2rem;
+    @include breakpoint('tablet') {
+      width: 750px;
+      margin: 0 auto;
+    }
+    @include breakpoint('desktop') {
+      width: 1008px;
+    }
+
+    .grid {
+      display: flex;
+      flex-direction: column;
+      @include breakpoint('tablet') {
+        flex-direction: row;
+        column-gap: 2.2%;
+      }
+      &--item {
+        margin-bottom: 2.8125rem;
+        .icon {
+          color: $primary;
+          margin-bottom: 1rem;
+          width: 45px;
+          height: 45px;
+        }
+
+        h2 {
+          font-size: 1rem;
+          // margin-bottom: 0.625rem;
+          color: $header-color;
+          font-weight: 700;
+          margin: 0 0 0.625rem;
+          line-height: 1.33;
+        }
+        p {
+          font-size: 1rem;
+          color: $font-light;
+          margin: 0;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

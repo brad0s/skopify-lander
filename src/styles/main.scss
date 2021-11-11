@@ -1,0 +1,15 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+@import './base/base';
+
+.Shopify {
+  @import './components/hero';
+  @import './components/points';
+  @import './components/brands';
+  @import './components/quote';
+  @import './components/faq';
+  @import './components/footer';
+}
+
+@import './components/modal';

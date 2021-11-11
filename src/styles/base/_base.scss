@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+
+    #root {
+      position: relative;
+    }
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 16px;
+}
+
+.Shopify {
+  font-family: $font-family;
+
+  .page-width {
+    padding: 0 2rem;
+    margin: 0 auto;
+    @include breakpoint('tablet') {
+      width: 750px;
+    }
+    @include breakpoint('desktop') {
+      width: 1008px;
+    }
+  }
+}

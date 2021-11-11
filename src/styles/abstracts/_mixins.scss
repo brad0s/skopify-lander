@@ -1,0 +1,60 @@
+@mixin button() {
+  flex-grow: 1;
+  background-color: #212326;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 8px 8px;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border-style: none;
+}
+
+@mixin link() {
+  color: $primary;
+  &:hover {
+    text-decoration: none;
+  }
+  &:active {
+    background-color: rgba(0, 128, 96, 0.125);
+  }
+}
+
+// MEDIA QUERIES
+
+/*
+  576px: mobile
+  768: tablet
+  1200+: desktop
+*/
+
+@mixin breakpoint($breakpoint) {
+  // mobile
+  @if $breakpoint == sm-mobile {
+    @media (min-width: 320px) {
+      @content;
+    }
+  }
+  @if $breakpoint == mobile {
+    @media (min-width: 365px) {
+      @content;
+    }
+  }
+  // tablet
+  @if $breakpoint == tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  // desktop
+  @if $breakpoint == sm-desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}

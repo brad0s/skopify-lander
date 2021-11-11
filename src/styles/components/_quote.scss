@@ -1,0 +1,43 @@
+.Quote {
+  border-top: 1px solid #d2d5d9;
+  padding: 4rem 0;
+  @include breakpoint('tablet') {
+    padding: 6rem 0;
+  }
+  .grid {
+    text-align: center;
+    .wrapper {
+      margin-bottom: 1.42rem;
+      @include breakpoint('tablet') {
+        width: 520px;
+        margin: 0 auto 2rem;
+      }
+      @include breakpoint('desktop') {
+        width: 700px;
+      }
+
+      blockquote {
+        font-size: 1.25rem;
+        margin: 0 0 0.9rem;
+        color: $header-color;
+        line-height: 1.5;
+        font-weight: 400;
+        text-align: center;
+      }
+      cite {
+        font-size: 0.875rem;
+        line-height: 1.14;
+        text-transform: uppercase;
+        letter-spacing: 0.043rem;
+        text-align: center;
+        font-style: normal;
+        font-weight: 700;
+      }
+    }
+
+    button {
+      @include button();
+      background-color: $primary;
+    }
+  }
+}
